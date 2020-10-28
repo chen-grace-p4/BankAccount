@@ -30,4 +30,13 @@ public class BankAccount {
     }
   }
 
+  public boolean withdraw(double amount) {
+    if (amount <= balance && amount >= 0) {
+      balance -= amount;
+      return true;
+    } else {
+      return false;
+    }
+  }
+  
 }
