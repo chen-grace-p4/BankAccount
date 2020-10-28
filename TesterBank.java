@@ -8,5 +8,9 @@ public class TesterBank {
     System.out.println("Withdrawal of $50:");
     System.out.println(a1.withdraw(50));
     System.out.println(a1.getBalance());
+
+    System.out.println("Deposit of $80:");
+    System.out.println(a1.deposit(80));
+    System.out.println(a1.getBalance());
   }
 }
