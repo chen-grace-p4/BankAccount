@@ -3,7 +3,7 @@ public class TesterBank {
     BankAccount a1 = new BankAccount(100, 12345, "password");
     // a1.setPassword("newpass");
     // System.out.println(a1.getBalance());
-    // System.out.println(a1.getAccount());
+    // System.out.println(a1.getAccountID());
     //
     // System.out.println("Withdrawal of $50:");
     // System.out.println(a1.withdraw(50));
