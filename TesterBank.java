@@ -9,8 +9,20 @@ public class TesterBank {
     System.out.println(a1.withdraw(50));
     System.out.println(a1.getBalance());
 
+    System.out.println("Withdrawal of $70, should be false:");
+    System.out.println(a1.withdraw(70));
+    System.out.println(a1.getBalance());
+
+    System.out.println("Withdrawal of $-50, should be false:");
+    System.out.println(a1.withdraw(-50));
+    System.out.println(a1.getBalance());
+
     System.out.println("Deposit of $80:");
     System.out.println(a1.deposit(80));
+    System.out.println(a1.getBalance());
+
+    System.out.println("Deposit of $-100:");
+    System.out.println(a1.deposit(-100));
     System.out.println(a1.getBalance());
   }
 }
