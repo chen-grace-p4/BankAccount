@@ -3,10 +3,9 @@ public class BankAccount {
   private int accountID;
   private String password;
 
-  public BankAccount (double b, int a, String p) {
-    balance = b;
-    accountID = a;
-    password = p;
+  public BankAccount (int accountID, String password) {
+    accountID = accountID;
+    password = password;
   }
 
   public double getBalance() {
@@ -17,6 +16,7 @@ public class BankAccount {
     return accountID;
   }
 
+//don't read the password, just change it to maintain security
   public void setPassword(String newPass) {
     password = newPass;
   }
@@ -41,7 +41,7 @@ public class BankAccount {
 
   public String toString() {
     String retstring = "";
-    retstring += accountID + "\t" + balance;
+    retstring += "#" + accountID + "\t" + "$" + balance;
     return retstring;
   }
 }
