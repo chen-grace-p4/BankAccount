@@ -44,4 +44,8 @@ public class BankAccount {
     retstring += "#" + accountID + "\t" + "$" + balance;
     return retstring;
   }
+
+  private boolean authenticate (String password) {
+    return password.equals(this.password);
+  }
 }
