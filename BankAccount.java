@@ -4,8 +4,8 @@ public class BankAccount {
   private String password;
 
   public BankAccount (int accountID, String password) {
-    accountID = accountID;
-    password = password;
+    this.accountID = accountID;
+    this.password = password;
   }
 
   public double getBalance() {
